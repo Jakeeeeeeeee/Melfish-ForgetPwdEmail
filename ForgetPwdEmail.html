@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请重设您的密码</title>
+    <style>
+      body{
+        box-sizing: border-box;
+      }
+
+      .overlay{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 0;
+      }
+
+      .card{
+        width: 700px;
+        background-color: white;
+        border-radius: 8px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .header{
+        height: 75px;
+        border-bottom: 1px solid #E0E0E0;
+      }
+
+      .headerText{
+        font-family: 'ZCOOL KuaiLe';
+        color: #C97A40;
+        padding: 26px 40px;
+      }
+
+      .icon{
+        position: absolute;
+        top:11px;
+        left: 286px;
+      }
+
+      .content{
+        margin: 120px 0 8px 250px;
+        font-family: 'Microsoft YaHei';
+        color: #4f4f4f;
+      }
+
+      .content h1{
+        letter-spacing: 2px;
+        font-size: 24px;
+      }
+
+      button{
+        font-family: 'ZCOOL Kuaile';
+        outline: none;
+        border: none;
+        cursor: pointer;
+        word-break: keep-all;
+        height: 52px;
+        width: 150px;
+        font-size: 20px;
+        background: #EB9050;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 8px;
+        margin: 64px 275px 72px;
+      }
+
+      .footer{
+        color: #828282;
+        margin: 0 243px 32px;
+        font-family: 'Microsoft YaHei';
+      }
+    </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="card">
+      <div class="header">
+        <div class="headerText">一团袋鼠</div>
+        <img class="icon" src="images/logo.svg" alt="Logo">
+      </div>
+        <div class="content">
+          <h1>重设密码</h1>
+          <div>请点击按钮重新设置密码</div>
+        </div>
+      <button>重设密码</button>
+      <div class="footer">如非本人操作，请...</div>
+    </div>
+  </div>
+</body>
+</html>
